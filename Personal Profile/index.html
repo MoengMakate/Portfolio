@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/60b4a82344.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headered-text">
+                <p>Software Developer</p>
+                <h1>Hi i'm <span>Moeng</span> Makate Surprise</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------about--------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-01">
+                    <img src="images/image01.jpeg">
+                </div>
+                 <div class="about-col-02">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A Systems Engineer graduate with a diploma in Information Technology, seeking a challenging career at an organization, where I could utilize my technical skills and knowledge. I consider myself as vibrant, hardworking, willing to learn and listen to other people ideas.
+                        In short, I am a Proactive, Innovative and Problem solver with strong attention to detail and eager to expand on the knowledge I currently have. I have a comprehensive understanding of the ability to work within a team as well as cross-team, how to build strong relationships, taking initiatives and effective communication skills. I also have experience in learning and applying new technologies as appropriate.
+                        </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('personal')">Personal Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!--for the skills-->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <!--Soft skills-->
+                            <li class="heading">
+                                <h6><b><u>Theoretical & Soft Skills</u></b></h6>
+                            </li>
+                            <li>System Development Life Cycle</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Design Patterns</li>
+                            <li>Agile / Scrum / Kanban – Project management methodologies</li>
+                            <li>Software Testing</li>
+                            <li>UML Diagrams</li>
+                            <!--Technical skills-->
+                            <li class="heading">
+                                <h6><b><u>Technical Skills</u></b></h6>
+                            </li>
+                            <li>SQL/PLMySQL</li>
+                            <li>System Adminstration</li>
+                            <li>Trobleshooting</li>
+                            <li>Security & Maintenance</li>
+                            <li>Software & Hardware Installation</li>
+                            <li>Technical Support</li>
+                            <li>Microsoft Office Apps</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <!--Personal skills-->
+                    <div class="tab-contents" id="personal">
+                        <ul>
+                            <li class="heading">
+                                <h6><b><u>Personal Skill</u></b></h6>
+                            </li>
+                            <li>•	Reliable and professional</li>
+                            <li>•	Critical thinking and problem solving</li>
+                            <li>•	Communication skills</li>
+                            <li>•	Responsible and committed</li>
+                            <li>•	Ability to perform physical work</li>
+                            <li>•	Emotion intelligence</li>
+                            <li>•	Positive Attitude</li>
+                            <li>•	Team player </li>
+                            
+                        </ul>
+                    </div>
+                    <!--for Experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>   
+                            <li class="heading">
+                                <h6><b><u>Binary Bit Technologies|1st August 2022 - 4th September 2023</u></b></h6>
+                            </li>
+                            <li>• Built RESTful APIs using ASP.net C#, connecting web-apps to SQL databases for data persistnce </li>
+                            <li>• Developed front-end interfaces with HTML, CSS, and JavaScript to enhance user experience and responsiveness</li>
+                            <li>•  Collaborated with team members using Git for version control, participating in code reviews and agile sprint planning </li>
+                            <li>• Conducted unit testing and debugging to ensure code quality and functionality</li>
+                            <li class="heading">
+                                <h6><b><u>Forge Academy |8 January 2025 - Current</u></b></h6>
+                            </li>
+                            <li>• Built a full-stack food delivery platform (Sisonke) using React Native frontend and Node.js backend with MongoDB database </li>
+                            <li>• Implemented user authentication and authorization using JWT tokens to secure user data and sessions</li>
+                            <li>• Developed mobile applications using Flutter and React Native, integrating with Firebase for real-time data sync</li>
+                            <li>• Collaborated with cross-functional teams using Agile methodologies to deliver high-quality software solutions</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <!--for Education-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <!--Tertiary school-->
+                            <li class="heading">
+                                <h6><b><u>Tertiary Education</u></b></h6>
+                            </li>
+                            <li><span>Highest Level Attained</span> - National Diploma in Information Technology</li>
+                            <li><span>Institution Attended</span> - Tshwane University of Technology</li>
+                            <li><span>Year Attained</span> - 2022</li>
+                            <!--High school-->
+                            <li class="heading">
+                                <h6><b><u>High School Education</u></b></h6>
+                            </li>
+                            <li><span>Highest Grade Attained</span> - National Senior Certificate</li>
+                            <li><span>School Attended</span> - Matshele Secondary</li>
+                            <li><span>Year Attained</span> - 2017</li>
+                            <li class="heading">
+                                <h6><b><u>Subject</u></b></h6>
+                            </li>
+                            <li>•English</li>
+                            <li>•Sepedi</li>
+                            <li>•Mathematics</li>
+                            <li>•Physical Science</li>
+                            <li>•Geography</li>
+                            <li>•Life Science</li>
+                            <li>•Life Orientation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Services-------------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Software Engineer</h2>
+                    <p>As a software engineer, I design and develop efficient, scalable software solutions tailored to user needs. My responsibilities include writing clean, maintainable code, testing and debugging applications, and collaborating with cross-functional teams to deliver high-quality products. 
+                        I actively contribute to code reviews, maintain technical documentation, and continuously improve existing systems. 
+                        I also stay current with emerging technologies and best practices to ensure the software remains robust, secure, and aligned with industry standards </p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>As a web designer, I specialize in creating visually appealing, user-friendly website layouts that enhance user experience across all devices. My work involves developing wireframes and prototypes, selecting cohesive design elements, and ensuring responsive, accessible design. 
+                        I collaborate closely with developers to bring concepts to life, using tools like Figma and Adobe Creative Suite. 
+                        I also maintain and update websites regularly, staying current with industry trends and best practices to deliver modern, effective digital experiences.</p>
+                        <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Designer</h2>
+                    <p>As an app designer, I specialize in creating intuitive, visually appealing, and user-centered mobile and web applications. My work involves conducting user research, planning information architecture, and designing seamless user experiences through wireframes, prototypes, and high-fidelity UI designs. 
+                        I collaborate closely with developers and stakeholders to ensure the final product aligns with both user needs and business goals. 
+                        I also perform usability testing and continuously refine designs based on user feedback, maintaining consistent design systems and delivering polished, functional interfaces.</p>
+                        <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Portfolio--------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image02.jpg" alt="not uploded" >
+                    <div class="layer">
+                        <h3>Social Madia App</h3>
+                        
+                        <a href="#"></a><i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                </div>
+                <div class="work" >
+                    <img src="images/image03.jpg" alt="not uploded">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        
+                        <a href="#"></a><i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image04.jpg" alt="not uploded">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        
+                        <a href="#"></a><i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-------------Contact Page----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>moengmakate@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0799938292</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
+
+                    </div>
+                    <a href="images/Moeng Makate CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                   
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>copyright @ Moeng Surprise</p>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tablink of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+         // Hide sidemenu on scroll
+         window.onscroll = function() {
+            closemenu();
+         };
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDfDqoRy8VsGjTVFALCvVzdZM6cpyHlk1_RgxwFF6URTSyzAhl6LsbbsRnJuJvtj_9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
