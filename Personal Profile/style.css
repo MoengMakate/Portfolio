@@ -130,9 +130,7 @@ nav ul li a:hover::after{
     color: #2f08a5;
     font-size: 14px;
 }
-.heading ul li h7{
 
-}
 .heading{
     margin-bottom: 40px;
     font-size: 40px;
@@ -231,7 +229,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #3700ff;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -259,6 +257,13 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+.github-link {
+    color: blue;
+}
+.github-link:hover {
+    color: darkblue; /* optional */
+}
+
 
 /*-------------------contact---------------*/
 .contact-left{
